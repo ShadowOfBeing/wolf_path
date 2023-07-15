@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <script src="js/database.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="rubrics-menu">
+            <div class="main-title introduction" onclick="getLayout('introduction')">Вступление</div>
+            <div class="main-title summary" onclick="getLayout('summary')">Резюме</div>
+            <div class="main-title preparationForInterviews" onclick="getLayout('preparationForInterviews')">Подготовка к собесам</div>
+            <div class="main-title responsesToVacancies" onclick="getLayout('responsesToVacancies')">Отклики на вакансии</div>
+            <div class="main-title screening" onclick="getLayout('screening')">Скрининг</div>
+            <div class="main-title technicaInterview" onclick="getLayout('technicaInterview')">Техническое собеседование</div>
+            <div class="main-title salaryNegotiations" onclick="getLayout('salaryNegotiations')">Зарплатные переговоры</div>
+            <div class="main-title probation" onclick="getLayout('probation')">Испытательный срок</div>
+            <div class="main-title dismissal" onclick="getLayout('dismissal')">Увольнение</div>
+        </div>
+        <div class="chat-wrapper">
+            <div class="text-wrapper"></div>
+            <div class="prev-btn" onclick="getStep(category, sessionStorage.getItem('step'), -1)">вернуться на шаг назад</div>
+            <div class="next-btn" onclick="getStep(category, sessionStorage.getItem('step'), 1)">я всё понял, идём дальше</div>
+        </div>
+    </div>
+    <script>
+        var category = sessionStorage.getItem("category");
+        var step = sessionStorage.getItem("step");
+
+        // делаем категорию визуально выбранной
+        if (!category) {
+            category = 'introduction';
+        }
+
+        // выдаём инфу по категории
+        getStep(category, 0, 1);
+
+        // делаем категорию визуально выбранной
+        document.getElementsByClassName(category)[0].classList.add('select');
+    </script>
+</body>
+</html>

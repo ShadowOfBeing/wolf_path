@@ -1,0 +1,86 @@
+.main-container {
+    display: flex;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rubrics-menu {
+    width: 25vw;
+}
+
+.main-title {
+    margin: auto;
+    font-size: 2.5vh;
+    width: 90%;
+    border: 2px solid red;
+    margin: 5px;
+    padding: 8px;
+    transition: 0.2s;
+    background-color: white;
+}
+
+.main-title:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.select {
+    background-color: red;
+    color: white;
+}
+
+red {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    color: blue;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.chat-wrapper {
+    position: relative;
+    border: 2px solid red;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 65%;
+    height: 60%;
+    padding: 1%;
+    font-size: 200%;
+}
+
+.text-wrapper {
+    height: 102%;
+    overflow: auto;
+}
+
+.next-btn, .prev-btn {
+    position: absolute;
+    top: 102%;
+    width: 49%;
+    height: 4.5vh;
+    background-color: red;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    line-height: 120%;
+}
+
+.prev-btn {
+    left: 0%;
+}
+
+.next-btn {
+    left: 50%;
+}
+
+.next-btn:hover, .prev-btn:hover {
+    cursor: pointer;
+    background-color: #e60000;
+}
