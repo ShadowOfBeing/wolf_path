@@ -22,8 +22,9 @@
         </div>
         <div class="chat-wrapper">
             <div class="text-wrapper"></div>
-            <div class="prev-btn" onclick="getStep(category, sessionStorage.getItem('step'), -1)">вернуться на шаг назад</div>
-            <div class="next-btn" onclick="getStep(category, sessionStorage.getItem('step'), 1)">я всё понял, идём дальше</div>
+            <div id="pages"></div>
+            <div id="prev-btn" onclick="getStep(category, sessionStorage.getItem('step'), -1)">вернуться на шаг назад</div>
+            <div id="next-btn" onclick="getStep(category, sessionStorage.getItem('step'), 1)">я всё понял, идём дальше</div>
         </div>
     </div>
     <script>

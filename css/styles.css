@@ -60,7 +60,33 @@ a {
     overflow: auto;
 }
 
-.next-btn, .prev-btn {
+#pages {
+    position: absolute;
+    top: -11%;
+    left: -0.2%;
+    width: 100%;
+    height: 50px;
+}
+
+.page {
+    display: inline-block;
+    border: 2px solid red;
+    margin: 5px;
+    padding: 5px;
+}
+
+.page:hover {
+    cursor: pointer;
+    background: red;
+    color: white;
+}
+
+.active {
+    background: red;
+    color: white;
+}
+
+#next-btn, #prev-btn {
     position: absolute;
     top: 102%;
     width: 49%;
@@ -72,15 +98,15 @@ a {
     line-height: 120%;
 }
 
-.prev-btn {
+#prev-btn {
     left: 0%;
 }
 
-.next-btn {
+#next-btn {
     left: 50%;
 }
 
-.next-btn:hover, .prev-btn:hover {
+#next-btn:hover, #prev-btn:hover {
     cursor: pointer;
     background-color: #e60000;
 }
