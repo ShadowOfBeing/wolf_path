@@ -99,7 +99,7 @@ a {
     color: white;
     font-size: 100%;
     text-align: center;
-    line-height: 120%;
+    line-height: 100%;
 }
 
 #prev-btn {
@@ -129,9 +129,3 @@ a {
 #text-img-1:hover ~ #img-1 {
    display: block;
 }
-/*
-#img-1, #text-img-1:hover {
-   display: none;
-}*/
-
-
