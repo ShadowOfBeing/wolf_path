@@ -27,3 +27,13 @@ function getStep(category, step, stepValue) {
 //        `
     }
 }
+
+function viewImage(option) {
+    if (option == 'img-1') {
+        var img = document.getElementById('img-1')
+        img.style.display = 'block';
+//        document.addEventListener('click', function (event) {
+//          img.style.display = 'none';
+//        });
+    }
+}

@@ -30,6 +30,7 @@
 .select {
     background-color: red;
     color: white;
+    margin-left: 1.1vw;
 }
 
 red {
@@ -38,7 +39,10 @@ red {
 }
 
 a {
-    color: blue;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid red;
 }
 
 .pointer:hover {
@@ -110,3 +114,24 @@ a {
     cursor: pointer;
     background-color: #e60000;
 }
+
+/* картинки */
+#img-1 {
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    height: auto;
+    z-index: 100;
+}
+
+#text-img-1:hover ~ #img-1 {
+   display: block;
+}
+/*
+#img-1, #text-img-1:hover {
+   display: none;
+}*/
+
+
