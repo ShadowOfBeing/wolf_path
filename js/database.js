@@ -1,3 +1,26 @@
+links = {'om_resume': 'https://t.me/+_PErenvEwIE1OWFi',
+         'knowledge_base': 'https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei',
+         'om_backend': 'https://t.me/+_TMyb3TeWCUzMGIy',
+         'om_frontend': 'https://t.me/+BzYjMFdnogo4ZDRi',
+         'om_android': 'https://t.me/+lzGMyZTX6FFiNGZi',
+         'om_ios': 'https://t.me/+halfwvE_RUM1ODIy',
+         'om_infosec': 'https://t.me/+xGgfPINSDyNlMjAy',
+         'om_qa': 'https://t.me/+aMvDT5l05m03ZmIy',
+         'om_gamedev': 'https://t.me/+fhybVz39YAs1MmJi',
+         'om_vacancy': 'https://t.me/+z5oKoizwVl5mMWY6',
+         'om_dismissal': 'https://t.me/+lwbtl5fch803MWEy',
+         'om_company_reviews': 'https://t.me/+2Xxunx7ab90yMWFi',
+         'om_value': 'https://t.me/+yzX7kAXYH3QxMTJi',
+         'boosty_links': 'https://telegra.ph/Poleznye-ssylki-stai-Osoznannaya-merkantilnost-07-10',
+         'mock_bot': 'https://t.me/mock_interview_robot',
+         'experience': 'https://habr.com/ru/articles/748474/',
+         'sobes_google_form': 'https://docs.google.com/forms/d/e/1FAIpQLSeUFdOoAbk8sA6PlHNeYqcNQkCn4zIq90a94Hdn456EbPlT1Q/viewform',
+         'questions_for_hr': 'https://github.com/kix/reverse-interview/blob/master/README.md',
+         'one_day': 'https://t.me/one_IT_day',
+         'probation': 'https://youtu.be/dqKsBT_gW8s',
+         'sn_video': 'https://www.youtube.com/watch?v=NrJM8Uyi8GE',
+         'sn_text': 'https://teletype.in/@your_soft_skillzz/rJiG3XsCX',}
+
 messages = {
     'introduction': {
         1: `Это волчий путеводитель, который за руку проведёт тебя по волчьим тропам. По умолчанию считаем, что ты уже
@@ -17,11 +40,11 @@ messages = {
     },
     'summary': {
         1: `Первое, что нужно начинающему волку - составить резюме. Резюме нужно, чтобы тебя заметили и пригласили на
-            собеседование. Для этого первым делом идём в тематический чат <a href="https://t.me/+_PErenvEwIE1OWFi" target="_blank">ОМ: Резюме</a>.`,
-        2: `В чате <a href="https://t.me/+_PErenvEwIE1OWFi" target="_blank">ОМ: Резюме</a> находим топик
-            <red>Правила [FAQ]</red> и внимательно изучаем всё что там написано.`,
-        3: `В том же чате <a href="https://t.me/+_PErenvEwIE1OWFi" target="_blank">ОМ: Резюме</a> переходим в топик
-            <red>Резюме</red> и внимательно изучаем всю инфу по ссылкам в закрепе.`,
+            собеседование. Для этого первым делом идём в тематический чат <a href="${links.om_resume}" target="_blank">ОМ: Резюме</a>.`,
+        2: `В чате <a href="${links.om_resume}" target="_blank">ОМ: Резюме</a> находим топик <red>Правила [FAQ]</red> и
+            внимательно изучаем всё что там написано.`,
+        3: `В том же чате <a href="${links.om_resume}" target="_blank">ОМ: Резюме</a> переходим в топик <red>Резюме</red>
+            и внимательно изучаем всю инфу по ссылкам в закрепе.`,
         4: `Далее в этом же топике <red>Резюме</red> в поиске по ключевым словам ищем примеры резюме по своему
             направлению и языку (те версии, что прошли одобрение модераторов) и из кучи таких резюме собираем своё.
             <red>Не нужно переписывать слово в слово</red>, компании придумываете сами, задачи тоже берёте по аналогии.`,
@@ -35,11 +58,10 @@ messages = {
     'preparationForInterviews': {
         1: `Далее нужно минимально подготовиться к собеседованиям. Безусловно всё выучить нереально, но нерационально с
             нулём знаний идти на собесы, это слишком долгий путь, а мы ведь не ищем таких путей?<br><br>
-            Первым делом в чате <a href="https://t.me/+_PErenvEwIE1OWFi" target="_blank">ОМ: Резюме</a> идём в топик
+            Первым делом в чате <a href="${links.om_resume}" target="_blank">ОМ: Резюме</a> идём в топик
             <red>Собеседования</red> и изучаем внимательно всю информацию в закрепе.`,
         2: `Самые частые вопросы со скринингов и с техсобесов можно найти в
-            <a href="https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei" target="_blank">Базе знаний</a> -
-            находим и учим ответы.<br>
+            <a href="${links.knowledge_base}" target="_blank">Базе знаний</a> - находим и учим ответы.<br>
             <br>
             Так же можно поспрашивать ссылки у людей в тематических чатах:<br>
             <div id="chats-list-title" onclick="viewChatsList()">
@@ -47,27 +69,27 @@ messages = {
                 Список чатов по направлениям
             </div>
             <div id="chats-list">
-                <a href="https://t.me/+_TMyb3TeWCUzMGIy" target="_blank">ОМ: Backend</a>
-                <a href="https://t.me/+BzYjMFdnogo4ZDRi" target="_blank">ОМ: Frontend</a>
-                <a href="https://t.me/+lzGMyZTX6FFiNGZi" target="_blank">ОМ: Android</a>
-                <a href="https://t.me/+halfwvE_RUM1ODIy" target="_blank">ОМ: iOS</a>
-                <a href="https://t.me/+xGgfPINSDyNlMjAy" target="_blank">ОМ: InfoSecurity</a>
-                <a href="https://t.me/+aMvDT5l05m03ZmIy" target="_blank">ОМ: QA</a>
-                <a href="https://t.me/+fhybVz39YAs1MmJi" target="_blank">ОМ: Gamedev</a>
-                <a href="https://telegra.ph/Poleznye-ssylki-stai-Osoznannaya-merkantilnost-07-10" target="_blank">Прочие направления</a>
+                <a href="${links.om_backend}" target="_blank">ОМ: Backend</a>
+                <a href="${links.om_frontend}" target="_blank">ОМ: Frontend</a>
+                <a href="${links.om_android}" target="_blank">ОМ: Android</a>
+                <a href="${links.om_ios}" target="_blank">ОМ: iOS</a>
+                <a href="${links.om_infosec}" target="_blank">ОМ: InfoSecurity</a>
+                <a href="${links.om_qa}" target="_blank">ОМ: QA</a>
+                <a href="${links.om_gamedev}" target="_blank">ОМ: Gamedev</a>
+                <a href="${links.boosty_links}" target="_blank">Прочие направления</a>
             </div>
             База знаний наполняется медленно, может что-то новенькое подскажут. Но сначала обязательно изучи закреп в
             чате по своему направлению, там может находиться то, что ты ищешь.`,
         3: `Так же полезно посмотреть несколько записей реальных собеседований, как задают вопросы, как на них обычно отвечают.
-            Ищем в <a href="https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei" target="_blank">Базе знаний</a>,
-            ищем на <a href="https://youtube.com" target="_blank">youtube</a>.`,
+            Ищем в <a href="${links.boosty_links}" target="_blank">Базе знаний</a>, ищем на
+            <a href="https://youtube.com" target="_blank">youtube</a>.`,
         4: `Так же можешь попробовать пройти мок-собес в стае перед прохождением реальных собесов. Волки помогут подсветить
-            твои слабые места + поборешь страх собесов. Для этого у нас есть <a href="https://t.me/mock_interview_robot" target="_blank">бот</a>.`,
+            твои слабые места + поборешь страх собесов. Для этого у нас есть <a href="${links.mock_bot}" target="_blank">бот</a>.`,
         5: `Так же хорошо проработай свою легенду, если собираешься крутить опыт. Нет, серьёзно, продумай всё до мельчайших
             деталей, попроси товарищей по тематическому чату накидать каверзных вопросов и продумывай все детали легенды.<br>
             Вдохновение можешь черпать из телеграм-канала <a href="https://t.me/one_IT_day" target="_blank">Один день ITтишника</a>.<br>
             <br>
-            Если ещё сомневаешься крутить ли опыт ознакомься с <a href="https://habr.com/ru/articles/748474/" target="_blank">экспериментом</a>.`,
+            Если ещё сомневаешься крутить ли опыт ознакомься с <a href="${links.experience}" target="_blank">экспериментом</a>.`,
         6: `С этим закончили, можно переходить к следующему блоку <red class="pointer" onclick="getLayout('responsesToVacancies')">Отклики на вакансии</red>.`,
     },
     'responsesToVacancies': {
@@ -75,7 +97,7 @@ messages = {
             <a href="https://habr.ru" target="_blank">Хабр</a>, <a href="https://geekjobs.ru" target="_blank">Geekjobs</a>,
             <a href="https://linkedin.com" target="_blank">Linkedin</a> и начинаем откликаться на вакансии.<br>
             <br>
-            Помимо этих площадок вакансии также можно искать в чате <a href="https://t.me/+z5oKoizwVl5mMWY6" target="_blank">ОМ: Вакансии</a>,
+            Помимо этих площадок вакансии также можно искать в чате <a href="${links.om_vacancy}" target="_blank">ОМ: Вакансии</a>,
             а так же в тематических телеграм каналах за пределами стаи (например <a href="https://t.me/myresume_ru" target="_blank">в таком</a>)
             и в специальных ботах с вакансиями (например <a href="https://t.me/g_jobbot" target="_blank">в таком</a>).<br>
             <br>
@@ -118,7 +140,7 @@ messages = {
             Ответы на эти вопросы у тебя должны от зубов отлетать.`,
         4: `Скрининг с эйчаром - отвечаем уверенно, в конце задаём свои вопросы. Обязательно задавай вопросы эйчару,
             отсутствие вопросов может произвести впечатление, что ты не сильно заинтересован в вакансии. Примеры
-            вопросов, которые можно задать - <a href="https://github.com/kix/reverse-interview/blob/master/README.md" target="_blank">ссылка</a>.<br>
+            вопросов, которые можно задать - <a href="${links.questions_for_hr}" target="_blank">ссылка</a>.<br>
             <br>
             Обязательно уточняем в течение какого времени дадут ответ.`,
         5: `Напоминаем о себе, если в оговоренное время не дали ответ.`,
@@ -142,7 +164,7 @@ messages = {
             собеседование нам задали как можно меньше вопросов, а собеседование не резиновое.<br>
             <br>
             Так же помоги своим товарищам и не забывай после технического собеседования заполнять
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUFdOoAbk8sA6PlHNeYqcNQkCn4zIq90a94Hdn456EbPlT1Q/viewform" target="_blank">эту форму</a>.`,
+            <a href="${links.sobes_google_form}" target="_blank">эту форму</a>.`,
         4: `Не спорьте с собеседующим, за исключением случаев, когда в задании ошибка. Даже если вы при нём загуглите
             и докажите что он неправ в реальности это скорее вызовет у него обиду, нежели восхищение какой вы умный и
             инициативный и умеете отстаивать свою точку зрения. Даже если вас примут в компанию, есть шанс, что он
@@ -172,8 +194,8 @@ messages = {
             ошибками. Вода камень точит, рано или поздно ты получишь свой заветный оффер.<br>
             <br>
             Ещё как вариант можно спросить в чате по своему направлению (
-            <a href="https://t.me/+_TMyb3TeWCUzMGIy" target="_blank">ОМ: Backend</a>,
-            <a href="https://t.me/+BzYjMFdnogo4ZDRi" target="_blank">ОМ: Frontend</a>)
+            <a href="${links.om_backend}" target="_blank">ОМ: Backend</a>,
+            <a href="${links.om_frontend}" target="_blank">ОМ: Frontend</a>)
             соразмерны ли твои зарплатные ожидания тому опыту и технологиям, что ты расписал в резюме. Возможно стоит
             ещё накрутить опыта, либо же поубавить свои аппетиты (конечно же второй вариант не для нас, ауф).`,
         9: `При трудоустройстве нужно понимать текущую ситуацию в найме и психологию нанимающей стороны. Так сложилось, что
@@ -196,18 +218,18 @@ messages = {
             оффер, в крайнем случае согласишься на ту сумму, что изначально предложили, только придётся придумать причину
             почему отказался от других офферов.<br>
             <br>
-            Подробнее про зарплатные переговоры можно узнать <a href="https://teletype.in/@your_soft_skillzz/rJiG3XsCX" target="_blank">тут</a>.<br>
-            Так же посмотри <a href="https://www.youtube.com/watch?v=NrJM8Uyi8GE" target="_blank">это видео</a>.`,
-        3: `После трудоустройства не забываем написать пост в <a href="https://t.me/+yzX7kAXYH3QxMTJi" target="_blank">ОМ: Полезное</a>
+            Подробнее про зарплатные переговоры можно узнать <a href="${links.sn_text}" target="_blank">тут</a>.<br>
+            Так же посмотри <a href="${links.sn_video}" target="_blank">это видео</a>.`,
+        3: `После трудоустройства не забываем написать пост в <a href="${links.om_value}" target="_blank">ОМ: Полезное</a>
             и поделиться своей историей.`,
         4: `С этим блоком всё, переходи к блоку <red class="pointer" onclick="getLayout('probation')">Испытательный срок</red>.`,
     },
     'probation': {
-        1: `В первую очередь посмотри <a href="https://youtu.be/dqKsBT_gW8s" target="_blank">это видео</a>.`,
+        1: `В первую очередь посмотри <a href="${links.probation}" target="_blank">это видео</a>.`,
         2: `В процессе работы выписываем все крупные задачи над которыми ты работал, чтобы потом добавить в резюме.`,
         3: `После успешного прохождения испытательного срока пишем пост в
-            <a href="https://t.me/one_IT_day" target="_blank">Один день ITшника</a>. Так же можно оставить отзыв на компанию
-            в чате <a href="https://t.me/+2Xxunx7ab90yMWFi" target="_blank">Отзывы о компаниях</a> в топике <red>Строго отзывы</red>.`,
+            <a href="${links.one_day}" target="_blank">Один день ITшника</a>. Так же можно оставить отзыв на компанию
+            в чате <a href="${links.om_company_reviews}" target="_blank">Отзывы о компаниях</a> в топике <red>Строго отзывы</red>.`,
         4: `Стая помогла тебе с трудоустройством? Помоги и ты стае!<br>
             - <i id="text-img-1">не убегаем из сообщества</i>, остаёмся и помогаем новичкам<br>
             - зовём друзей в сообщество, вместе веселее<br>
@@ -215,7 +237,7 @@ messages = {
         5: `Остался последний блок - <red class="pointer" onclick="getLayout('dismissal')">Увольнение</red>.`,
     },
     'dismissal': {
-        1: `Если дело дошло до твоего увольнения - загляни в чат <a href="https://t.me/+lwbtl5fch803MWEy" target="_blank">ОМ: Увольнения</a>.<br>
+        1: `Если дело дошло до твоего увольнения - загляни в чат <a href="${links.om_dismissal}" target="_blank">ОМ: Увольнения</a>.<br>
             <br>
             Если увольнение на испытательном сроке и по твоей инициативе, то можно уволиться предупредив руководство за 3 дня.`,
         2: `Конец!`,
