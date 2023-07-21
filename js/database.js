@@ -1,5 +1,5 @@
-links = {'om_resume': 'https://t.me/+_PErenvEwIE1OWFi',
-         'knowledge_base': 'https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei',
+links = {
+         'om_resume': 'https://t.me/+_PErenvEwIE1OWFi',
          'om_backend': 'https://t.me/+_TMyb3TeWCUzMGIy',
          'om_frontend': 'https://t.me/+BzYjMFdnogo4ZDRi',
          'om_android': 'https://t.me/+lzGMyZTX6FFiNGZi',
@@ -11,6 +11,7 @@ links = {'om_resume': 'https://t.me/+_PErenvEwIE1OWFi',
          'om_dismissal': 'https://t.me/+lwbtl5fch803MWEy',
          'om_company_reviews': 'https://t.me/+2Xxunx7ab90yMWFi',
          'om_value': 'https://t.me/+yzX7kAXYH3QxMTJi',
+         'knowledge_base': 'https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei',
          'boosty_links': 'https://telegra.ph/Poleznye-ssylki-stai-Osoznannaya-merkantilnost-07-10',
          'mock_bot': 'https://t.me/mock_interview_robot',
          'experience': 'https://habr.com/ru/articles/748474/',
@@ -19,7 +20,8 @@ links = {'om_resume': 'https://t.me/+_PErenvEwIE1OWFi',
          'one_day': 'https://t.me/one_IT_day',
          'probation': 'https://youtu.be/dqKsBT_gW8s',
          'sn_video': 'https://www.youtube.com/watch?v=NrJM8Uyi8GE',
-         'sn_text': 'https://teletype.in/@your_soft_skillzz/rJiG3XsCX',}
+         'sn_text': 'https://teletype.in/@your_soft_skillzz/rJiG3XsCX',
+        }
 
 messages = {
     'introduction': {
