@@ -41,10 +41,22 @@ messages = {
             <a href="https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei" target="_blank">Базе знаний</a> -
             находим и учим ответы.<br>
             <br>
-            Так же можно поспрашивать ссылки у людей в тематических чатах (
-            <a href="https://t.me/+_TMyb3TeWCUzMGIy" target="_blank">ОМ: Backend</a>,
-            <a href="https://t.me/+BzYjMFdnogo4ZDRi" target="_blank">ОМ: Frontend</a> и т.д.),
-            база знаний наполняется медленно, может что-то новенькое подскажут. Но сначала обязательно изучи закреп в
+            Так же можно поспрашивать ссылки у людей в тематических чатах:<br>
+            <div id="chats-list-title" onclick="viewChatsList()">
+                <div class="arrow-down"></div>
+                Список чатов по направлениям
+            </div>
+            <div id="chats-list">
+                <a href="https://t.me/+_TMyb3TeWCUzMGIy" target="_blank">ОМ: Backend</a>
+                <a href="https://t.me/+BzYjMFdnogo4ZDRi" target="_blank">ОМ: Frontend</a>
+                <a href="https://t.me/+lzGMyZTX6FFiNGZi" target="_blank">ОМ: Android</a>
+                <a href="https://t.me/+halfwvE_RUM1ODIy" target="_blank">ОМ: iOS</a>
+                <a href="https://t.me/+xGgfPINSDyNlMjAy" target="_blank">ОМ: InfoSecurity</a>
+                <a href="https://t.me/+aMvDT5l05m03ZmIy" target="_blank">ОМ: QA</a>
+                <a href="https://t.me/+fhybVz39YAs1MmJi" target="_blank">ОМ: Gamedev</a>
+                <a href="https://telegra.ph/Poleznye-ssylki-stai-Osoznannaya-merkantilnost-07-10" target="_blank">Прочие направления</a>
+            </div>
+            База знаний наполняется медленно, может что-то новенькое подскажут. Но сначала обязательно изучи закреп в
             чате по своему направлению, там может находиться то, что ты ищешь.`,
         3: `Так же полезно посмотреть несколько записей реальных собеседований, как задают вопросы, как на них обычно отвечают.
             Ищем в <a href="https://docs.google.com/document/d/1JAObwghUnQ3K7t_8oITbYEDDRREFxxI1NGRdT9vhbqs/edit#heading=h.82aspg1bcpei" target="_blank">Базе знаний</a>,
@@ -203,7 +215,9 @@ messages = {
         5: `Остался последний блок - <red class="pointer" onclick="getLayout('dismissal')">Увольнение</red>.`,
     },
     'dismissal': {
-        1: `Если дело дошло до твоего увольнения - загляни в чат <a href="https://t.me/+lwbtl5fch803MWEy" target="_blank">ОМ: Увольнения</a>`,
+        1: `Если дело дошло до твоего увольнения - загляни в чат <a href="https://t.me/+lwbtl5fch803MWEy" target="_blank">ОМ: Увольнения</a>.<br>
+            <br>
+            Если увольнение на испытательном сроке и по твоей инициативе, то можно уволиться предупредив руководство за 3 дня.`,
         2: `Конец!`,
     },
 }

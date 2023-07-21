@@ -37,3 +37,20 @@ function viewImage(option) {
 //        });
     }
 }
+
+function viewChatsList() {
+  var chats = document.getElementById('chats-list').querySelectorAll('a')
+  var arrow = document.getElementById('chats-list-title').children[0]
+
+  if (arrow.classList.contains('arrow-down')) {
+    arrow.classList.replace('arrow-down', 'arrow-up')
+    chats.forEach((item) => {
+      item.style.display = 'flex';
+    });
+  } else {
+    arrow.classList.replace('arrow-up', 'arrow-down')
+    chats.forEach((item) => {
+      item.style.display = 'none';
+    });
+  }
+}

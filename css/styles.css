@@ -129,3 +129,49 @@ a {
 #text-img-1:hover ~ #img-1 {
    display: block;
 }
+
+/* список чатов по направлениям */
+#chats-list-title {
+    position: relative;
+    border-bottom: 2px solid red;
+    width: 50%;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+}
+
+#chats-list-title:hover {
+    cursor: pointer;
+}
+
+#chats-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-bottom: 3vh;
+}
+
+#chats-list > * {
+    display: none;
+    width: 35%;
+    margin: 15px 6% 0 0;
+    font-size: 1.5vw;
+}
+
+.arrow-up {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 91%;
+    border: 20px solid transparent;
+    border-top-color: red;
+    transform: rotate(180deg);
+}
+
+.arrow-down {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 91%;
+    border: 20px solid transparent;
+    border-top-color: red;
+}
