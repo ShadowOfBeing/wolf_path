@@ -54,3 +54,13 @@ function viewChatsList() {
     });
   }
 }
+
+function mobileCSS() {
+//    if (window.innerHeight / window.innerWidth > 2) {
+//        var titles = document.querySelector(".rubrics-menu").querySelectorAll(".main-title")
+//        titles.forEach((mainTitle) => {
+//            mainTitle.style.fontSize = '4.5vw'
+//        })
+//        //console.log(111)
+//    }
+}
