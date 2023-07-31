@@ -28,6 +28,12 @@
     }
 }
 
+@media (min-aspect-ratio: 1/2) and (max-aspect-ratio: 1/1.79) {
+    .main-title {
+        font-size: 4.5vw;
+    }
+}
+
 .main-title:hover {
     background-color: red;
     color: white;
